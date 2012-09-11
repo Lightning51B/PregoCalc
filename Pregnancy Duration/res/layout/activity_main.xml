@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/babyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:padding="@dimen/padding_small"
+            android:textSize="18dp"
+            style="@style/WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/daysLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/babyName"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:padding="@dimen/padding_small"
+            android:textSize="60dp"
+            style="@style/WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/daysLeft"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/dueDateString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            style="@style/List.BlueText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/trimesterString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/trimester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/trimester"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trimester"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/nextTrimesterString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView13"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/progressString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView05"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/lastDocString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView07"
+            android:layout_alignBottom="@+id/TextView07"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/lastDoc"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView07"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/nextDocString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView09"
+            android:layout_alignBottom="@+id/TextView09"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/nextDoc"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView09"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/genderString"
+            style="@style/List.WhiteText"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView11"
+            android:layout_alignBottom="@+id/TextView11"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/gender"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextView13"
+            android:padding="@dimen/padding_medium"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/nextTrimester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progress"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/nextTrimester"
+            style="@style/List.WhiteText"
+            tools:context=".MainActivity" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView13"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView07"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/TextView09"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00F2FF" />
+
+    </RelativeLayout>
+
+</ScrollView>
