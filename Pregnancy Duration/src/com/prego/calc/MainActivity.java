@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements View.OnClickListener {
 
 	private SharedPreferences prefs;
-	static String prefName = "pregnancyDuration";
+	static String prefName = "pregoCalc";
 	static String dueDatePerf = "dueDatePerf";
 
 	private TextView dueDate;

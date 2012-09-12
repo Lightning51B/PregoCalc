@@ -19,6 +19,6 @@
     <string name="genderString">Gender:</string>
     <string name="gender">Unknown</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">Pregnancy Duration</string>
+    <string name="title_activity_main">Prego Calc</string>
 
 </resources>

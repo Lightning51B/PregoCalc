@@ -24,10 +24,14 @@ public class DatePickerFragment extends DialogFragment  implements
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		TextView date = (TextView) getActivity().findViewById(R.id.dueDate);
+		
 		// Use the current date as the default date in the picker
 		DateTime dt;
+		DateTime today = new DateTime(new Date());
 		String[] dateArrayStr = date.getText().toString().split("/");
 		Integer[] dateArray = new Integer[3];
+		
+		//set the date as the last date used or today's date
 		if(dateArrayStr.length == 3)
 			for(int i=0; i<dateArrayStr.length; i++)
 				dateArray[i] = Integer.parseInt(dateArrayStr[i]);
@@ -35,14 +39,18 @@ public class DatePickerFragment extends DialogFragment  implements
 			dt = new DateTime( dateArray[2], dateArray[0], dateArray[1],0,0);
 		else
 			dt = new DateTime(new Date());
+		
 		Calendar c = new GregorianCalendar(dt.getYear(),dt.getMonthOfYear()-1, dt.getDayOfMonth(),0,0);
 		
 		int year = c.get(Calendar.YEAR);
 		int month = c.get(Calendar.MONTH);
 		int day = c.get(Calendar.DAY_OF_MONTH);
+		
 		DatePickerDialog dpd = new DatePickerDialog(getActivity(), this, year, month, day);
 		DatePicker dp = dpd.getDatePicker();
-		dp.setMinDate(c.getTimeInMillis());
+		//Set min date to today
+		dp.setMinDate(today.toGregorianCalendar().getTimeInMillis());
+		dpd.setTitle("Enter Due Date");
 		return dpd;
 	}
 
