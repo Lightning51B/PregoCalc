@@ -2,13 +2,13 @@
     android:id="@+id/mainScroll"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-
+
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="102dp" >
 
         <TextView
             android:id="@+id/babyName"
@@ -107,78 +107,6 @@
             tools:context=".MainActivity" />
 
         <TextView
-            android:id="@+id/TextView07"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/TextView05"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/lastDocString"
-            style="@style/List.WhiteText"
-            android:textStyle="bold"
-            tools:context=".MainActivity" />
-
-        <TextView
-            android:id="@+id/TextView08"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/TextView07"
-            android:layout_alignBottom="@+id/TextView07"
-            android:layout_alignParentRight="true"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/lastDoc"
-            style="@style/List.WhiteText"
-            tools:context=".MainActivity" />
-
-        <TextView
-            android:id="@+id/TextView09"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/TextView07"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/nextDocString"
-            style="@style/List.WhiteText"
-            android:textStyle="bold"
-            tools:context=".MainActivity" />
-
-        <TextView
-            android:id="@+id/TextView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/TextView09"
-            android:layout_alignBottom="@+id/TextView09"
-            android:layout_alignParentRight="true"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/nextDoc"
-            style="@style/List.WhiteText"
-            tools:context=".MainActivity" />
-
-        <TextView
-            android:id="@+id/TextView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/TextView09"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/genderString"
-            style="@style/List.WhiteText"
-            android:textStyle="bold"
-            tools:context=".MainActivity" />
-
-        <TextView
-            android:id="@+id/TextView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/TextView11"
-            android:layout_alignBottom="@+id/TextView11"
-            android:layout_alignParentRight="true"
-            android:padding="@dimen/padding_medium"
-            android:text="@string/gender"
-            style="@style/List.WhiteText"
-            tools:context=".MainActivity" />
-
-        <TextView
             android:id="@+id/progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,27 +154,8 @@
             android:layout_alignBottom="@+id/TextView05"
             android:layout_alignParentLeft="true"
             android:background="#00F2FF" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_alignBottom="@+id/TextView07"
-            android:layout_alignParentLeft="true"
-            android:background="#00F2FF" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_alignBottom="@+id/TextView09"
-            android:layout_alignParentLeft="true"
-            android:background="#00F2FF" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:background="#00F2FF" />
+
+       
 
     </RelativeLayout>
 

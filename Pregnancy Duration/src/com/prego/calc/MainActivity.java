@@ -1,7 +1,9 @@
-package com.pregnancy.duration;
+package com.prego.calc;
 
 import org.joda.time.DateTime;
 import org.joda.time.Days;
+
+import com.prego.calc.R;
 
 import android.app.Activity;
 import android.app.DialogFragment;

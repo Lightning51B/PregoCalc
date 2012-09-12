@@ -1,4 +1,4 @@
-package com.pregnancy.duration;
+package com.prego.calc;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -25,9 +25,16 @@ public class DatePickerFragment extends DialogFragment  implements
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		TextView date = (TextView) getActivity().findViewById(R.id.dueDate);
 		// Use the current date as the default date in the picker
-		//TODO use the current value within the date textview as the default for the datepicker
-		DateTime dt = new DateTime(new Date());
-		
+		DateTime dt;
+		String[] dateArrayStr = date.getText().toString().split("/");
+		Integer[] dateArray = new Integer[3];
+		if(dateArrayStr.length == 3)
+			for(int i=0; i<dateArrayStr.length; i++)
+				dateArray[i] = Integer.parseInt(dateArrayStr[i]);
+		if(dateArray[0] != null)
+			dt = new DateTime( dateArray[2], dateArray[0], dateArray[1],0,0);
+		else
+			dt = new DateTime(new Date());
 		Calendar c = new GregorianCalendar(dt.getYear(),dt.getMonthOfYear()-1, dt.getDayOfMonth(),0,0);
 		
 		int year = c.get(Calendar.YEAR);
